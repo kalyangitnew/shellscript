@@ -12,4 +12,4 @@ echo "@ = $@"
 echo "# = $#"
 # as the # will give the no of variables in line of executing as there only it will gives "# - 2"
 
-echo -e "your name = $1\nyour no = $2"
+echo -e "your name = $1\nyour no = $2" ---
