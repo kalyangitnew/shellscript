@@ -8,3 +8,4 @@
 echo hello world this is kalyan
 echo welcome
 
+# printing information is very useful while running to tell user what is happening and what is executing
