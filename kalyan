@@ -2,8 +2,33 @@
 ...
 
 types of sheel scripting
-shell scripting file
+
+many were there
+
+they are
+1.sh
+2.bash
+3.kssh
+4.csh
+5.zsh
+
+1.we are using bash
+
+because
+  --> it is default linux os of red hat
+  --? it has features of ksh,csh,sh
+  --L in red hat family os bash and sh are same.
+ * all the features of above shell are embedded in "bash shell"
+
+
+2.shell scripting file
+we will wrire like .sh and .bash.Both are same.
+just for undersanding we will use "".sh"" in around.
+
+
 hot to execute shell script
+$ bash script.sh
+$ sh script.sh
 
 mkhjrewrewewrwe
 
