@@ -25,6 +25,6 @@ echo ${x}x${y} = 400
 DATE=$(date +%F) # command type
 echo today date is $DATE
 # we need to use "()" for saving dynamic varaible
-# arth substitution
+# arth substitution FOR THAT WE NEED TO USE "((ARTHIMETIC EXPRESSION))"
 ADD=$((2+3+4*5-7))
 echo added = $ADD
