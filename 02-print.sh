@@ -9,3 +9,10 @@ echo hello world this is kalyan
 echo welcome
 
 # printing information is very useful while running to tell user what is happening and what is executing
+
+# to get attention from users we will use some commands called "ESC sequences"
+# \n --- new line  and \e ---- new tab
+# syntax : echo -e "message1\n message2"
+echo -e "kalyan \n hello"
+# for using any esc sequences we will use "-e" and invereted commas for in line.
+# we can run two comments in terminal by ";" example git pull ; bash 02-print.sh
