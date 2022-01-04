@@ -30,3 +30,7 @@ ADD=$((2+3+4*5-7))
 echo added = $ADD
 
 echo COURSE NAME = $COURSE_NAME
+ # if i execute this above line it shoes empty as COURSE_NAME is not mentioned or declared anywhere
+ # so if we given in terminal like COURSE_NAME=KALYAN still itwill not take any varaible
+ # we will use "export command" in "terminal" to save the varaible from there to local
+ # means syntax will be "export COURSE_NAME=kalyan" and if we now execute we can get COURSE NAME=kalyan
