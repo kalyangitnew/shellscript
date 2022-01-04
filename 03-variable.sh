@@ -34,3 +34,4 @@ echo COURSE NAME = $COURSE_NAME
  # so if we given in terminal like COURSE_NAME=KALYAN still itwill not take any varaible
  # we will use "export command" in "terminal" to save the varaible from there to local
  # means syntax will be "export COURSE_NAME=kalyan" and if we now execute we can get COURSE NAME=kalyan
+# export will make it as environmental varaible
