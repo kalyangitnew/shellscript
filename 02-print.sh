@@ -30,3 +30,11 @@ echo -e "\e[34mText in blue colour"
 
 # for more colours concept "https://misc.flogisoft.com/bash/tip_colors_and_formatting'
 
+# colour will always follow if we give colour and after some othere text it will print in same colour
+
+echo -e "\e[34mText in blue colour"
+echo hello world
+
+# we need to disable colour follow concept we will use "\e[0m' at last for disabling colour concept
+echo -e "\e[36mText in cyan colour is disable after this\e[0m"
+echo hello world this text will be in normal colour
