@@ -22,7 +22,9 @@ y=20
 echo ${x}x${y} = 400
 # all the time we will not hardcore the data we should get the date dynamically
 # DATE=2012-10-20
-DATE=$(date +%F)
+DATE=$(date +%F) # command type
 echo today date is $DATE
 # we need to use "()" for saving dynamic varaible
-
+# arth substitution
+ADD=$((2+3+4*5-7))
+echo added = $ADD
