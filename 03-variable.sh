@@ -35,3 +35,10 @@ echo COURSE NAME = $COURSE_NAME
  # we will use "export command" in "terminal" to save the varaible from there to local
  # means syntax will be "export COURSE_NAME=kalyan" and if we now execute we can get COURSE NAME=kalyan
 # export will make it as environmental varaible
+
+# we have name diaries also we can save no s also
+
+#syntax will be "declare -A asarray2=([h1]=kalyan [h2]=kumar)
+
+declare -A assArray2=( [HDD]=Samsung [Monitor]=Dell [Keyboard]=A4Tech )
+echo ${assArray2[HDD]}
