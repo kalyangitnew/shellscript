@@ -7,7 +7,7 @@
 a=100
 # string
 b=abc
-n=hi i am kalyan
+n=hi
 
 # In bash shell there are no different data types.it considers everything as 'string"
 
@@ -17,3 +17,6 @@ n=hi i am kalyan
 echo value of a = $a
 echo value of b = $b
 echo value of c = ${n}
+x=20
+y=20
+echo ${x}x${y} = 400
