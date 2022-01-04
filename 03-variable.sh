@@ -28,3 +28,5 @@ echo today date is $DATE
 # arth substitution FOR THAT WE NEED TO USE "((ARTHIMETIC EXPRESSION))"
 ADD=$((2+3+4*5-7))
 echo added = $ADD
+
+echo COURSE NAME = $COURSE_NAME
