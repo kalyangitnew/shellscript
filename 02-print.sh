@@ -28,3 +28,5 @@ echo -e "kalyan \n hello"
 
 echo -e "\e[34mText in blue colour"
 
+# for more colours concept "https://misc.flogisoft.com/bash/tip_colors_and_formatting'
+
