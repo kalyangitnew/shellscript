@@ -7,7 +7,7 @@
   # example beloe
 
 function abc() {
-  echi i am function of abc
+  echo i am function of abc
 }
 ## main programme line is before for above function
 abc
