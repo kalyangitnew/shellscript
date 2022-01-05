@@ -17,3 +17,17 @@ foo() {
   echo i am foo
 }
 foo
+
+# if we declare variables in main program can access them in function & vice-versa
+# variables of main programme can be overwritten by function and vice-versa
+# special arguments which we entered in CLI cannot access by functions as functions has it own arguments
+
+function abc() {
+  echo i am function of abc
+  b=20
+  echo c variable is taken from proagram to function = $c
+}
+## main programme line is before for above function
+abc
+echo b in main programme from it function = &b
+c=32
