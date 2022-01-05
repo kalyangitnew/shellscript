@@ -43,6 +43,7 @@ echo first argument = $1
 function daew() {
   r=1
   return
+# if we use return 20 we will get exit status as 20
   echo variable j=$j
 }
 daew
