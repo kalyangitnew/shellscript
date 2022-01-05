@@ -48,4 +48,4 @@ function daew() {
 }
 daew
 echo r=$r
-echo exit status of daew=$?
+echo exit status of daew=$? #3
