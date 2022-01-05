@@ -38,3 +38,13 @@ function xda() {
 ## main programme line is before for above function
 echo first argument = $1
 # do above by dng bash 08-functions.sh kalyan see the output
+# "" return "'
+# for coming out of the function we will use this
+function daew() {
+  r=1
+  return
+  echo variable j=$j
+}
+daew
+echo r=$r
+echo &?
