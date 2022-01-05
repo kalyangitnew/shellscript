@@ -9,4 +9,4 @@ two: #### Target two
 #   					second line like this is rules
 # in above function we have used grep will search for #### lines and anothere gre -v will removes grep in that commanf
 # sed means stream editor in linux used for searching,find,replace.insertion and deletion
-## sed /s - s means starting of sed and first #### will get replaced by empty.
+# "sed /s - s means starting of sed and first #### will get replaced by empty."
