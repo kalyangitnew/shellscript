@@ -25,9 +25,9 @@ foo
 function abc() {
   echo i am function of abc
   b=20
-  echo c variable is taken from proagram to function = $c
+  echo c variable is taken from proagram to function=$c
 }
 ## main programme line is before for above function
 abc
-echo b in main programme from it function = &b
+echo b in main programme from it function=&b
 c=32
