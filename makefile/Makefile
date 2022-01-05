@@ -1,3 +1,5 @@
+none:
+	@true
 one:
 	@echo one
 two:
