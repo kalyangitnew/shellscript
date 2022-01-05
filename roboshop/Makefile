@@ -21,8 +21,8 @@ frontend: #### Setup Frontend Component
 mysql: #### Setup Mysql Component
 	@bash components/mysql.sh
 
-Reddis: #### Setup Reddis Component
-	@bash components/reddis.sh
+Redis: #### Setup Redis Component
+	@bash components/redis.sh
 
 rabbitmq: #### Setup RabbitMQ Component
 	@bash components/rabbitmq.sh
