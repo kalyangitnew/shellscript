@@ -32,7 +32,7 @@ c=23
 xyz
 echo b in main programme from it function=$b
 # example for above cli statement
-function xyz() {
+function xda() {
   echo first argument = $1
 }
 ## main programme line is before for above function
