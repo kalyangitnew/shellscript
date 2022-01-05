@@ -37,3 +37,4 @@ function xda() {
 }
 ## main programme line is before for above function
 echo first argument = $1
+# do above by dng bash 08-functions.sh kalyan see the output
