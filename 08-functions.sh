@@ -21,7 +21,7 @@ foo
 # if we declare variables in main program can access them in function & vice-versa
 # variables of main programme can be overwritten by function and vice-versa
 # special arguments which we entered in CLI cannot access by functions as functions has it own arguments
-
+# example for below
 function xyz() {
   echo i am function of xyz
   b=20
