@@ -12,3 +12,8 @@ function abc() {
 ## main programme line is before for above function
 abc
 
+# or we can use like below
+foo() {
+  echo i am foo
+}
+foo
