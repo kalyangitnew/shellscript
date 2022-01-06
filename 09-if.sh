@@ -6,6 +6,8 @@
 # 1. string comparison 2 . number comparison 3.file comparison.
 # 1.string
 # the operators are = , == , != , -z
+# 2. number
+# the operators are -eq , -ne , -gt , -ge , -lt , -gt
 read -p 'enter username: ' username
 
 if [ "$username" == "root" ]; then
@@ -19,3 +21,8 @@ if [ $UID -eq 0 ]; then
 else
   echo "your are not root user"
 fi
+
+# first condition is of type "string"
+# second if type is of type "number"
+# we can search for file existing with file comparison
+# syntax for file is [ -f file ] or [ ! -f file ]
