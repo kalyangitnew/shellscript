@@ -2,7 +2,7 @@ none:
 	@grep '##' Makefile | grep -v grep | sed -e 's/##//'
 git-pull:
 	@echo git is pulling code -------- completed
-	git pull &>/dev/null
+	@git pull &>/dev/null
 cart: git-pull ## Setup Cart Component
 	@bash components/cart.sh
 
