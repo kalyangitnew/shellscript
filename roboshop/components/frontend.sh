@@ -1,7 +1,7 @@
 #!/bin/bash
 # The frontend is the service in RobotShop to serve the web content over Nginx.
 Print () {
-  echo -e "\e[1m$1\e[0m"
+  echo -n -e "\e[1m$1\e[0m ..... "
   echo -e "\n\e[36m------------ $1 -----------\n\e[0m" >>$LOG
 }
 stat () {
