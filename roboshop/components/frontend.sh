@@ -6,9 +6,9 @@ Print () {
 }
 stat () {
   if [ $1 -eq 0 ]; then
-    echo -e "\e[1;[32mSUCCESS\e[0m"
+    echo -e "\e[1;32mSUCCESS\e[0m"
   else
-    echo -e "\e[1;[31mFAILURE\e[0m"
+    echo -e "\e[1;31mFAILURE\e[0m"
   fi
 }
 # we have defined new function called stat to print success of installation after the command of yum success exit will mark 0 in "$?"
