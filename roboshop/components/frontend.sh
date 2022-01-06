@@ -8,11 +8,11 @@ yum install nginx -y &>>$LOG
 stat $?
 
 Print "Enabling nginx"
-systemctl enable nginx
+systemctl enable nginx &>>LOG
 stat $?
 
 Print "starting nginx"
-systemctl start nginx
+systemctl start nginx &>>LOG
 stat $?
 
 exit
