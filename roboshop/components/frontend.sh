@@ -16,15 +16,20 @@ systemctl start nginx &>>LOG
 stat $?
 
 # Let's download the HTDOCS content and deploy under the Nginx path.
-Print 'downloading the needed html file'
+Print "downloading the needed html file"
 curl -s -L -o /tmp/frontend.zip "https://github.com/roboshop-devops-project/frontend/archive/main.zip" &>>LOG
 stat $?
 
-exit
 # Deploy in Nginx Default Location.
+# we will remove any html pages there before by gng to there and we will delete
 
+Print "we went in to default html page and removed the old html content"
 cd /usr/share/nginx/html
 rm -rf *
+stat $?
+
+exit
+
 unzip /tmp/frontend.zip
 mv frontend-main/* .
 mv static/* .
