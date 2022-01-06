@@ -37,14 +37,16 @@ mv /tmp/frontend-main/static/* /usr/share/nginx/html/.
 stat $?
 # means we are moving the file there in to . and . means location of existing the prompt
 # in static file it will be we will ake from there to copy in html page of nginx
-exit
 
-mv static/* .
-rm -rf frontend-master static README.md
-mv localhost.conf /etc/nginx/default.d/roboshop.conf
+Print "we are copying the roboshop conf file to nginx path"
+cp /tmp/frontend-main/localhost.conf /etc/nginx/default.d/roboshop.conf
+stat $?
 # Finally restart the service once to effect the changes.
 
+Print "we are restarting nginx after modifications"
 systemctl restart nginx
+stat $?
+
 
 # at starting we have used print function to show comments like starting,installing & enabling nginx
 # in $1 all the time the line in print will be stored
