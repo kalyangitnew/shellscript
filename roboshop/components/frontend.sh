@@ -6,7 +6,7 @@ Print () {
 }
 stat () {
   if [ $1 -eq 0 ]; then
-    echo -e "\e[1:[32mSUCCEsS[0m"
+    echo -e "\e[1;[32mSUCCESS[0m"
   else
     echo -e "\e[1;[31mFAILURE[0m"
   fi
