@@ -7,7 +7,7 @@
 # 1.string
 # the operators are = , == , != , -z
 read -p 'enter username: ' username
-if [ "$username == root" ]; then
+if [ "$username" == "root" ]; then
   echo "you are root user"
 else
   echo "you are not root user"
