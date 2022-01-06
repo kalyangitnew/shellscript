@@ -1,6 +1,7 @@
 #!/bin/bash
 
 source components/common.sh
+# this command used to load the same commands for all components(like steps defining)
 
 Print "Installing nginx"
 yum install nginx -y &>>$LOG
