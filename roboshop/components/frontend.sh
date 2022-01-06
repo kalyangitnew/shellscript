@@ -8,11 +8,11 @@ yum install nginx -y &>>$LOG
 stat $?
 
 Print "Enabling nginx"
-systemctl enable nginx &>>LOG
+systemctl enable nginx &>>$LOG
 stat $?
 
 Print "starting nginx"
-systemctl start nginx &>>LOG
+systemctl start nginx &>>$LOG
 stat $?
 
 # Let's download the HTDOCS content and deploy under the Nginx path.
@@ -25,13 +25,19 @@ stat $?
 
 Print "we went in to default html page and removed the old html content"
 cd /usr/share/nginx/html
-rm -rf *
+rm -rf * &>>$LOG
 stat $?
 
-exit
+Print "Extracting front end archieve"
+unzip -o -d /tmp/frontend.zip
+stat $?
+# WE USING TO DO FORCELY WHEN MANY TIMES WE ARE DNG TO REPALCE AND COPY . WE WILL USE -o and -d as to do forcely in directory
 
-unzip /tmp/frontend.zip
+Print "we are moving front end zip file to present location "
 mv frontend-main/* .
+stat $?
+# means we are moving the file there in to . and . means location of existing the prompt
+
 mv static/* .
 rm -rf frontend-master static README.md
 mv localhost.conf /etc/nginx/default.d/roboshop.conf
