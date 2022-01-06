@@ -12,8 +12,8 @@ stat () {
   fi
 }
 # we have defined new function called stat to print success of installation after the command of yum success exit will mark 0 in "$?"
-# so we mentioned stat "$?" in the bottom of install cmmand(means after print
-# \n is just to make install message and success message in one line and 1: is to thickern colour
+# so we mentioned stat "$?" in the bottom of install command(means after print
+# \n & -n is just to make install message and success message in one line and 1: is to thick colour
 
 LOG=/tmp/roboshop.log
 rm -f $LOG
