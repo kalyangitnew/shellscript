@@ -6,3 +6,6 @@ if [ $COUNT -eq 0 ]; then
 else
   echo "Instance which you are creating already exists"
 fi
+
+# in above we have some count function and there we have stored the private ip address value of instance named "something which is given in CLI"
+ # If the named instances private address value after removing null statements is zero we have written a condition saying to create if not create new instance with the name given in CLI
