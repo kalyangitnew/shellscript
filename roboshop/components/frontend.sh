@@ -14,6 +14,7 @@ Print "Enabling nginx"
 systemctl enable nginx
 Print "starting nginx"
 systemctl start nginx
+exit
 # Let's download the HTDOCS content and deploy under the Nginx path.
 
 curl -s -L -o /tmp/frontend.zip "https://github.com/roboshop-devops-project/frontend/archive/main.zip"
