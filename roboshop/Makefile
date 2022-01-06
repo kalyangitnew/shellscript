@@ -33,6 +33,8 @@ rabbitmq: git-pull ## Setup RabbitMQ Component
 mongodb: git-pull ## Setup MongoDB Component
 	@bash components/mongodb.sh
 
+# we are using git-pull function to avoid git pull command in com line everytime
+
 
 
 
