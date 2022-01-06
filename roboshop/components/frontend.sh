@@ -10,6 +10,7 @@ stat () {
   else
     echo -e "\e[1;31mFAILURE\e[0m"
     echo -e "\n\e[1;33m script fail check logs\e[0m"
+    exit 1
   fi
 }
 # we have defined new function called stat to print success of installation after the command of yum success exit will mark 0 in "$?"
