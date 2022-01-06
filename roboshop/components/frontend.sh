@@ -24,20 +24,19 @@ stat $?
 # we will remove any html pages there before by gng to there and we will delete
 
 Print "we went in to default html page and removed the old html content"
-cd /usr/share/nginx/html
-rm -rf * &>>$LOG
+rm -rf /usr/share/nginx/html/* &>>$LOG
 stat $?
 
 Print "Extracting front end archieve"
-unzip -o -d /tmp/frontend.zip
+unzip -o -d /tmp /tmp/frontend.zip &>>LOG
 stat $?
-# WE USING TO DO FORCELY WHEN MANY TIMES WE ARE DNG TO REPALCE AND COPY . WE WILL USE -o and -d as to do forcely in directory
+# WE USING TO DO FORCEFULLLY WHEN MANY TIMES WE ARE DNG TO REPLACE AND COPY . WE WILL USE -o and -d as to do forcely in directory
 
 Print "we are moving front end zip file to present location "
-mv frontend-main/* .
+mv /tmp/frontend-main/static/* /usr/share/nginx/html/.
 stat $?
 # means we are moving the file there in to . and . means location of existing the prompt
-
+exit
 mv static/* .
 rm -rf frontend-master static README.md
 mv localhost.conf /etc/nginx/default.d/roboshop.conf
