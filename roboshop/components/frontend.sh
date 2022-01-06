@@ -47,8 +47,8 @@ Print "we are restarting nginx after modifications"
 systemctl restart nginx
 stat $?
 
-
 # at starting we have used print function to show comments like starting,installing & enabling nginx
 # in $1 all the time the line in print will be stored
 # log command used to store all the data while we get installing nginx
 # rm -f means just removing if we have any before and it also useful for running many times
+# IMP ; we can avoid again restarting by just moving enabling and starting nginx to down and removing there ,its our wish
