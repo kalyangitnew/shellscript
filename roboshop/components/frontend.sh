@@ -36,7 +36,9 @@ Print "we are moving front end zip file to present location "
 mv /tmp/frontend-main/static/* /usr/share/nginx/html/.
 stat $?
 # means we are moving the file there in to . and . means location of existing the prompt
+# in static file it will be we will ake from there to copy in html page of nginx
 exit
+
 mv static/* .
 rm -rf frontend-master static README.md
 mv localhost.conf /etc/nginx/default.d/roboshop.conf
