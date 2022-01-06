@@ -4,16 +4,32 @@ Print () {
   echo -e "\e[1m$1\e[0m"
   echo -e "\n\e[36m------------ $1 -----------\n\e[0m" >>$LOG
 }
+stat () {
+  if [ $1 -eq 0 ]; then
+    echo -e "\e[1:[32mSUCCEsS[0m"
+  else
+    echo -e "\e[1;[31mFAILURE[0m"
+  fi
+}
+# we have defined new function called stat to print success of installation after the command of yum success exit will mark 0 in "$?"
+# so we mentioned stat "$?" in the bottom of install cmmand(means after print
+# \n is just to make install message and success message in one line and 1: is to thickern colour
 
 LOG=/tmp/roboshop.log
 rm -f $LOG
 
 Print "Installing nginx"
 yum install nginx -y &>>$LOG
+stat $?
+
 Print "Enabling nginx"
 systemctl enable nginx
+stat $?
+
 Print "starting nginx"
 systemctl start nginx
+stat $?
+
 exit
 # Let's download the HTDOCS content and deploy under the Nginx path.
 
