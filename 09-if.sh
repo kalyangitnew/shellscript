@@ -13,7 +13,9 @@ if [ "$username" == "root" ]; then
 else
   echo "you are not root user"
 fi
+
 # above is string type and below is number type
+
 if [ $UID -eq 0 ]; then
   echo "your are root  user"
 else
