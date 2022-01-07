@@ -32,4 +32,4 @@ systemctl start rediS &>>$LOG
 stat $?
 
 # systemctl enable redis
-# systemctl start redis
+# systemctl start redis here
