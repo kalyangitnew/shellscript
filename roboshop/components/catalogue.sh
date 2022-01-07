@@ -50,10 +50,10 @@ Print "fixing app permissions"
 chown -R roboshop:roboshop /home/roboshop
 stat $?
 
-exit
 
-NOTE: We need to update the IP address of MONGODB Server in systemd.service file
-Now, lets set up the service with systemctl.
+# NOTE: We need to update the IP address of MONGODB Server in systemd.service file
+# Now, lets set up the service with systemctl.
+# nned to make this machine to know the ip address of another machine
 
 # mv /home/roboshop/catalogue/systemd.service /etc/systemd/system/catalogue.service
 # systemctl daemon-reload
