@@ -10,7 +10,7 @@ stat $?
 
 Print "INSTALLING REDIS REPO"
 rm -rf remi-release-7.rpm
-yum remove remu-release-7.rpm
+yum remove remi-release-7.rpm
 yum install http://rpms.remirepo.net/enterprise/remi-release-7.rpm -y &>>$LOG
 stat $?
 
