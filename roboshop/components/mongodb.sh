@@ -28,7 +28,7 @@ stat $?
 # restarting system again
 
 Print "restarted after changing DNS"
-systemctl restart mongo &>>$LOG
+systemctl restart mongod &>>$LOG
 stat $?
 
 # Download the schema and load it.
