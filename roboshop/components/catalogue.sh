@@ -70,8 +70,8 @@ sleep 5
 
 Print "checking DB connection from app"
 STAT=$(curl -s localhost:8080/health | jq .mongo)
-if [ "$STAT" == "true" ]; then
-  Stat 0
+if [[ "$STAT" == "true" ]]; then
+  STAT 0
 else
-  Stat 1
+  STAT 1
 fi
