@@ -15,5 +15,6 @@ fi
 
 
 IP=$(aws ec2 describe-instances --filters "Name=tag:Name,Values=$1" | jq ".Reservations[].Instances[].PrivateIpAddress" | grep -v null | xargs)
+# xargs is to remove the double quotation
 sed -e "s/DNSNAME/$1.roboshop.internal/" -e "s/IPADDRESS/${IP}/" record.json >/tmp/record.json
 # we are saving the ip and DNS in tmp file instead of output
