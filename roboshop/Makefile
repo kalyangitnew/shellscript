@@ -24,7 +24,7 @@ frontend: git-pull ## Setup Frontend Component
 mysql: git-pull ## Setup Mysql Component
 	@sudo bash components/mysql.sh
 
-Redis: git-pull ## Setup Redis Component
+redis: git-pull ## Setup Redis Component
 	@sudo bash components/redis.sh
 
 rabbitmq: git-pull ## Setup RabbitMQ Component
