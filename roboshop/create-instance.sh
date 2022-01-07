@@ -10,3 +10,10 @@ fi
 # in above we have some count function and there we have stored the private ip address value of instance named "something which is given in CLI"
 # If the named instances private address value after removing null statements is zero we have written a condition saying to create if not create new instance with the name given in CLI
 # we have choosen ip address because as instance terminated immediately ip address will gone
+
+# WE ARE MAPPING TO DNS NAME
+
+
+IP=$(aws ec2 describe-instances --filters "Name=tag:Name,Values=$1" | jq ".Reservations[].Instances[].PrivateIpAddress" | grep -v null )
+sed -e "s/DNSNAME/$1.roboshop.internal"  -e "s/IPADDRESS/.${IP}/" record.json >/tmp/record.json
+# we are saving the ip and DNS in tmp file instead of output
