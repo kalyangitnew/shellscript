@@ -15,7 +15,7 @@ stat $?
 
 Print "mongod is started"
 systemctl start mongod &>>$LOG
-stat &?
+stat $?
 
 # Update Liste IP address from 127.0.0.1 to 0.0.0.0 in config file
 # /etc/mongod.conf
