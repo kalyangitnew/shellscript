@@ -5,6 +5,7 @@ source components/common.sh
 # Install Redis.
 
 Print "Install yum utils"
+yum remove epel-release -y
 yum install epel-release yum-utils -y &>>$LOG
 stat $?
 
