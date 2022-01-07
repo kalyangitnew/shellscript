@@ -67,4 +67,4 @@ COMPONENT=user
 NODEJS
 CHECK_MONGO_FROM_APP
 
-#
+# to see mongo is connected or not we need to check curl localhost:8080/health in terminal
