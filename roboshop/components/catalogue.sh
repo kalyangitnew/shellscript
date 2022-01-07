@@ -36,10 +36,21 @@ Print "unzipping the catalogue file"
 unzip -o -d /home/roboshop /tmp/catalogue.zip &>>$LOG
 stat $?
 
-Print "copying the content"
-mv /home/roboshop/catalogue-main /home/roboshop/
- cd /home/roboshop/catalogue
-$ npm install
+Print "copying content"
+mv /home/roboshop/catalogue-main /home/roboshop/catalogue
+stat $?
+
+Print "need to install some dependencies"
+cd /home/roboshop/catalogue
+npm install --unsafe-perm &>>$LOG
+
+# we are giving SOME PERMISSIONS AS ROOT USER FOR INSTALLING DEPENDENCIES
+Print "fixing app permissions"
+chown -R roboshop:roboshop /home/roboshop
+stat $?
+
+exit
+
 NOTE: We need to update the IP address of MONGODB Server in systemd.service file
 Now, lets set up the service with systemctl.
 
