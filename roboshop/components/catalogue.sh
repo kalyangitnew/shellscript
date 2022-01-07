@@ -67,9 +67,10 @@ systemctl daemon-reload &>>$LOG && systemctl start catalogue &>>$LOG && systemct
 stat $?
 
 Print "checking DB connection from app"
-STAT=$(curl --s localhost:8080/health | jq .mongo)
+STAT=$(curl -s localhost:8080/health | jq .mongo)
 echo status = $STAT
 if ("$STAT" = "true"); then
   Stat 0
 else
   Stat 1
+fi
