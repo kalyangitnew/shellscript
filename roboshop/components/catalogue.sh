@@ -51,7 +51,7 @@ chown -R roboshop:roboshop /home/roboshop
 stat $?
 
 Print "Update DNS records in systemD config"
-sed -i -e 's/MONGO_DNSNAME/mongodb.roboshop.internal' /home/roboshop/catalogue/systemd.service &>>$LOG
+sed -i -e "s/MONGO_DNSNAME/mongodb.roboshop.internal" /home/roboshop/catalogue/systemd.service &>>$LOG
 stat $?
 
 # NOTE: We need to update the IP address of MONGODB Server in systemd.service file
