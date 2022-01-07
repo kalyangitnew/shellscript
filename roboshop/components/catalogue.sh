@@ -66,10 +66,11 @@ Print "system restarting"
 systemctl daemon-reload &>>$LOG && systemctl start catalogue &>>$LOG && systemctl enable catalogue &>>$LOG
 stat $?
 
+sleep 5
+
 Print "checking DB connection from app"
 STAT=$(curl -s localhost:8080/health | jq .mongo)
-echo status = $STAT
-if ("$STAT" = "true"); then
+if [ "$STAT" = "true" ]; then
   Stat 0
 else
   Stat 1
