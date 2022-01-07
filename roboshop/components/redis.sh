@@ -5,7 +5,7 @@ source components/common.sh
 # Install Redis.
 
 Print "Install yum utils"
-yum remove epel-release -y
+yum remove epel-release -y &>>$LOG
 yum install epel-release yum-utils -y &>>$LOG
 stat $?
 
@@ -28,8 +28,7 @@ sed -i -e 's/127.0.0.1/0.0.0.0/' /etc/redis.conf /etc/redis/redis.conf &>>$LOG
 stat $?
 
 Print "starting redis database"
-systemctl enable redis &>>$LOG
-systemctl restart rediS &>>$LOG
+systemctl enable redis &>>$LOG && systemctl restart redis &>>$LOG
 stat $?
 
 # systemctl enable redis
