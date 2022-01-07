@@ -74,5 +74,5 @@ STAT=$(curl -s localhost:8080/health/ | jq .mongo)
 if [ "STAT" == "true" ]; then
   Stat 0
 else
-  STAT 1
+  Stat 1
 fi
