@@ -32,8 +32,8 @@ Print "Removing any old content"
 rm -rf /home/roboshop/catalogue
 stat $?
 
-Print " unzipping the catalogue file"
-unzip /home/roboshop /tmp/catalogue.zip &>>$LOG
+Print "unzipping the catalogue file"
+unzip -o -d /home/roboshop /tmp/catalogue.zip &>>$LOG
 stat $?
 
 exit
