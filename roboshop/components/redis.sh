@@ -9,8 +9,6 @@ yum install epel-release yum-utils -y &>>$LOG
 stat $?
 
 Print "INSTALLING REDIS REPO"
-rm -rf remi-release-7.rpm
-# yum-config-manager --disable remi &>>$LOG
 yum install http://rpms.remirepo.net/enterprise/remi-release-7.rpm -y &>>$LOG
 stat $?
 
