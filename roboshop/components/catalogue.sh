@@ -43,6 +43,7 @@ stat $?
 Print "need to install some dependencies"
 cd /home/roboshop/catalogue
 npm install --unsafe-perm &>>$LOG
+stat $?
 
 # we are giving SOME PERMISSIONS AS ROOT USER FOR INSTALLING DEPENDENCIES
 Print "fixing app permissions"
