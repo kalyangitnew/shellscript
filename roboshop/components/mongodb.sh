@@ -36,6 +36,7 @@ stat $?
 Print "Download the schema file"
 curl -s -L -o /tmp/mongodb.zip "https://github.com/roboshop-devops-project/mongodb/archive/main.zip" &>>$LOG
 stat $?
+#
 
 Print "unzip the schema"
 unzip -o -d /tmp /tmp/mongodb.zip &>>$LOG
