@@ -1,5 +1,8 @@
 #!/bin/bash
 source components/common.sh
+cat $0 | grep ^Print
+
+exit
 
 # This service is responsible for showing the list of items that are to be sold by the RobotShop e-commerce porta
 # This service is written in NodeJS, Hence need to install NodeJS in the system.
