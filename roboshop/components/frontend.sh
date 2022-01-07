@@ -33,18 +33,18 @@ stat $?
 # WE USING TO DO FORCEFULLLY WHEN MANY TIMES WE ARE DNG TO REPLACE AND COPY . WE WILL USE -o and -d as to do forcely in directory
 
 Print "we are moving front end zip file to present location "
-mv /tmp/frontend-main/static/* /usr/share/nginx/html/.
+mv /tmp/frontend-main/static/* /usr/share/nginx/html/. &>>LOG
 stat $?
 # means we are moving the file there in to . and . means location of existing the prompt
 # in static file it will be we will ake from there to copy in html page of nginx
 
 Print "we are copying the roboshop conf file to nginx path"
-cp /tmp/frontend-main/localhost.conf /etc/nginx/default.d/roboshop.conf
+cp /tmp/frontend-main/localhost.conf /etc/nginx/default.d/roboshop.conf &>>LOG
 stat $?
 # Finally restart the service once to effect the changes.
 
 Print "we are restarting nginx after modifications"
-systemctl restart nginx
+systemctl restart nginx &>>LOG
 stat $?
 
 # at starting we have used print function to show comments like starting,installing & enabling nginx
