@@ -34,3 +34,16 @@ for fruit in apple bananna grape ; do
 done
 
 # while loop is always and infinite loop
+
+echo "checking connection on port 22 for host"
+while true ; do
+  nc -z $1 22 &>>/dev/null
+  if [ $? -eq 0 ]; then
+   break
+  fi
+  sleep;
+done
+
+
+
+break
