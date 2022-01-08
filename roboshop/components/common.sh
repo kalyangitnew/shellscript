@@ -74,6 +74,7 @@ SYSTEMD() {
   Stat $?
 }
 
+# this python function defined for paymnet app to set , as we can do easily calling this function there
 PYTHON() {
   Print "Install Python 3"
   yum install python36 gcc python3-devel -y &>>$LOG
