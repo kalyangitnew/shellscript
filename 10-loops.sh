@@ -12,3 +12,4 @@ while [ $a -gt 0 ]; do
   a=$((a-1))
 done
 # it may be infinite we need to set up some finite see common.sh or other components files for use
+#
