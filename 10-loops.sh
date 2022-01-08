@@ -15,10 +15,8 @@ do
     fi
     # Print the value
     echo "Iteration no $b"
-     b=$((b-1))
 done
 
-exit
 
 a=10
 while [ $a -gt 0 ]; do
@@ -27,3 +25,6 @@ while [ $a -gt 0 ]; do
   a=$((a-1))
 done
 # it may be infinite we need to set up some finite see common.sh or other components files for use
+
+# SYNTAX FOR for loop
+# for var in items; do
