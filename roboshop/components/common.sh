@@ -55,6 +55,7 @@ ROBOSHOP_USER() {
 }
 
 # this is for enabling or restarting components
+# to use simple as systemd in shipping code
 SYSTEMD() {
   Print "Fix App Permissions"
   chown -R roboshop:roboshop /home/roboshop
