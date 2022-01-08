@@ -6,6 +6,7 @@ MSPACE=$(cat $0 | grep Print | awk -F '"' '{print $2}' | awk '{ print length }' 
 COMPONENT_NAME=Shipping
 COMPONENT=shipping
 
+# MAVEN is the function we have called in common.sh file for downloading the maven
 MAVEN
 
 Print "Checking DB Connections from App"
