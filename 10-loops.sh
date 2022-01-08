@@ -32,3 +32,5 @@ done
 for fruit in apple bananna grape ; do
   echo fruit name = $fruit
 done
+
+# while loop is always and infinite loop
