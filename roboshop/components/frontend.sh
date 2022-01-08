@@ -46,7 +46,7 @@ stat $?
 Print "updating nginx conf file"
 sed -i -e '/catalogue/ s/localhost/catalogue.roboshop.internal' -e '/cart/ s/localhost/cart.roboshop.internal' -e '/user/ s/localhost/user.roboshop.internal' -e '/payment/ s/localhost/payment.roboshop.internal' -e '/shipping/ s/shipping.roboshop.internal' /etc/nginx/default.d/roboshop.conf &>>$LOG
 stat $?
-
+# the above function is for making automatically change the dns files
 Print "enabling nginx again"
 systemctl enable nginx &>>$LOG
 stat $?
