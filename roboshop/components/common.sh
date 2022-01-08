@@ -54,6 +54,7 @@ ROBOSHOP_USER() {
   Stat $?
 }
 
+# this is for enabling or restarting components
 SYSTEMD() {
   Print "Fix App Permissions"
   chown -R roboshop:roboshop /home/roboshop
@@ -94,6 +95,7 @@ PYTHON() {
   SYSTEMD
 }
 
+# we have used maven package function onside this only
 MAVEN() {
   Print "Install Maven"
   yum install maven -y &>>$LOG
