@@ -89,14 +89,15 @@ PYTHON() {
   Stat $?
   USER_ID=$(id -u roboshop)
   GROUP_ID=$(id -g roboshop)
-
+# here we have fixed as roboshop user and group in payment.inf file
   Print "Update ${COMPONENT_NAME} Service"
   sed -i -e "/uid/ c uid = ${USER_ID}" -e "/gid/ c gid = ${GROUP_ID}" /home/roboshop/${COMPONENT}/${COMPONENT}.ini &>>$LOG
   Stat $?
 
   SYSTEMD
 }
-
+# in above we have sued sed command to set the username as we loaaded in user id and croupd id variables
+# we will use " " for varaibles serach or edit thru sed command
 # we have used maven package function onside this only
 MAVEN() {
   Print "Install Maven"
