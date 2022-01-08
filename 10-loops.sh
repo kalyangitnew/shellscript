@@ -45,4 +45,7 @@ while true ; do
   echo -n '.'
 done
 
-
+# if we do bash 10-loops.sh "some ip address of instance
+# it will whether port 22 is open and if allow the all ports for that instance it will exit automatically
+# just to check whether port is opened or not
+#
