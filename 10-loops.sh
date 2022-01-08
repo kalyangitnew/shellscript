@@ -41,7 +41,7 @@ while true ; do
   if [ $? -eq 0 ]; then
    break
   fi
-  sleep;
+  sleep 1
 done
 
 
