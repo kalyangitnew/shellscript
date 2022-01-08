@@ -15,6 +15,7 @@ do
     fi
     # Print the value
     echo "Iteration no $b"
+     b=$((b-1))
 done
 
 exit
