@@ -17,3 +17,5 @@ if [ "$STAT" == "OK" ] ; then
 else
   Stat 1
 fi
+
+# above fnctin to see whether endpoints are connected to user server or not
