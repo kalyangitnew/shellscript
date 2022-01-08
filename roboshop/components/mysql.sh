@@ -23,7 +23,10 @@ Stat $?
 DEFAULT_PASSWORD=$(grep 'temporary password' /var/log/mysqld.log | awk '{print $NF}')
 NEW_PASSWORD="RoboShop@1"
 
+# here show databases is the mysql command to see databases inthe server
 echo 'show databases;' | mysql -uroot -p"${NEW_PASSWORD}"  &>>$LOG
+# we will get results as not changes so we will go to conditions statment
+# as the stament is known for changing the password in mysql and uninstall the pluggin is for the the properties of password to entry or ask when creation in mysql
 if [ $? -ne 0 ]; then
   Print "Changing the Default Password"
   echo -e "ALTER USER 'root'@'localhost' IDENTIFIED BY '${NEW_PASSWORD}';\nuninstall plugin validate_password;" >/tmp/pass.sql
