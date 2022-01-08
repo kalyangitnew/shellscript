@@ -27,4 +27,8 @@ done
 # it may be infinite we need to set up some finite see common.sh or other components files for use
 
 # SYNTAX FOR for loop
-# for var in items; do
+# for var in items; do commands ; done
+
+for fruit in apple bananna grape ; do
+  echo fruit name = $fruit
+done
